@@ -1,28 +1,32 @@
+
+
+
+
 <!doctype html>
 <html lang="en">
   <head>
     <title>NZA Law</title>
-    <!-- Required meta tags -->
+    Required meta tags
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap CSS -->
+    Bootstrap CSS
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./static/css/whoweare.css">
+    <link rel="stylesheet" href="../static/css/whoweare.css">
     <style>
     
     body {
-    background-image: url('static/images/nza_background.jpg');
+    background-image: url('../static/images/nza_background.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;  
   background-size: cover;
     }
   </style>
 
-  </head>
+  </head> -->
 
 <body>
-    <div class="container">
+     <div class="container">
         <div class="row">
             <div class="col">
               <h1><span>NIELSON, ZEHE</span> <span>& ANTAS, P.C.</span></h1>
@@ -38,7 +42,8 @@
               
             </div>
         </div>
-    </div>
+    </div> -->
+    {% block content %}
     <div class="container">
       <div class="row">
         <div class="col-3">
@@ -50,7 +55,7 @@
             <p><a class="two" href="#">Staff</a></p> 
             <p><a class="two" href="#">Reputation</a></p> 
             <p id="end"><a class="two" href="#">History</a></p>
-            <img src="static\images\content-navlink-where.jpg" alt="">
+            <img src="..\static\images\content-navlink-where.jpg" alt="">
             <p id="pic"><b>Where We Work</b></p>
             <p><a class="three" href="#">Find out more about our work coverage area</a></p>
           </div>
@@ -62,16 +67,17 @@
               one of the most respected law firms in the country that cares about your case, your business, and solving
               your problem. We invite you to get to know our attorneys better and inserstand the depth of experience
               and talent we have in the links below.</p>
-              <a href="#"><img id ="wel" src="static\images\sub-01-welcome.jpg" alt="Welcome"></a>
-              <a href="#"><img id="att" src="static\images\sub-01-attorneys.jpg" alt="Attorneys"></a> 
-              <a href="#"><img id="staff"  src="static\images\sub-01-staff.jpg" alt=""></a>
-              <a href="#"><img id="rep" src="static\images\sub-01-reputation.jpg" alt=""></a>
-              <a href="#"><img id="his" src="static\images\sub-01-history.jpg" alt=""></a>
+              <a href="#"><img id ="wel" src="..\static\images\sub-01-welcome.jpg" alt="Welcome"></a>
+              <a href="#"><img id="att" src="..\static\images\sub-01-attorneys.jpg" alt="Attorneys"></a> 
+              <a href="#"><img id="staff"  src="..\static\images\sub-01-staff.jpg" alt=""></a>
+              <a href="#"><img id="rep" src="..\static\images\sub-01-reputation.jpg" alt=""></a>
+              <a href="#"><img id="his" src="..\static\images\sub-01-history.jpg" alt=""></a>
               
             </div>
         </div>
       </div>
     </div> 
+    {% endblock content %}
     <div class="container">
       <div class="row"> 
         <div class="col">
