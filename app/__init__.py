@@ -1,8 +1,16 @@
-from flask import Flask, render_template
+from flask import Flask
+
 from config import Config
+
+from flask_sqlalchemy import SQLAlchemy
+from flask_migrate import Migrate
+
 app = Flask(__name__)
+
 app.config.from_object(Config)
-@app.route('/')
-def index():
-    return render_template('login.html')
-from app import routes
+
+db = SQLAlchemy(app)
+migrate = Migrate(app, db)
+
+from app import routes, models
+

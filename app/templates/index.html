@@ -1,3 +1,5 @@
+{% extends 'base.html' %}
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -12,31 +14,21 @@
 
     <style>
       body {
-        background-image: url("NZA-Team-Project/static/images/nza_background.jpg");
-      }
+    background-image: url('../static/images/nza_background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+    }
       </style>
 
   </head>
 
   <body>     
  
-    <div class="card">
-      <div class="card-header">
-          <img src="https://nzalaw.com/wp-content/themes/nza-law/images/logo.png" alt="NZALAWFIRM">
-      </div>
-      
-     <div>   
-       <hr style="border: 1.5px solid black">
-        <ul class="justify-content-center">
-          <li><a href="whoweare.html">WHO WE ARE</a><span class="divider">|</span></li>
-          <li><a href="whatwedo.html">WHAT WE DO</a><span class="divider">|</span></li>
-          <li><a href="#contact">NEWS & EVENTS</a><span class="divider">|</span></li>
-          <li><a href="#contact">WHERE WE WORK</a><span class="divider">|</span></li>
-          <li><a href="#about">CONTACT US</a></li>
-      
-        </ul>
-        <hr style="border: 1.5px solid black">
-    </div>
+   
+    {% block content %}
+
+
 
     <div class="row" >
       <div class="col-md-8">
@@ -73,6 +65,5 @@
 
            
         
-
   </body
 </html>
