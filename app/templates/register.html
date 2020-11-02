@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div style='background-color: #962b10; height: 450px ' class="col">
+            
+            <h2>Hello! Please register here!</h2>
+           
+
+            <form action="" method="POST">
+                {{ form.hidden_tag() }}
+                <div class="form-group">
+                    <fieldset>
+                        {{ form.username.label }}
+                        {{ form.username(class='form-control', placeholder='Username') }}
+                    </fieldset>
+                    <fieldset>
+                        {{ form.email.label }}
+                        {{ form.email(class='form-control', placeholder='Email') }}
+                    </fieldset>
+                    <fieldset>
+                        {{ form.password.label }}
+                        {{ form.password(class='form-control', placeholder='Password') }}
+                    </fieldset>
+                    <fieldset>
+                        {{ form.confirm_password.label }}
+                        {{ form.confirm_password(class='form-control', placeholder='Confirm Password') }}
+                    </fieldset>
+                    
+                </div>
+                {{ form.submit(class='btn btn-dark btn block') }}
+            </form>
+            
+        </div>
+    </div> 
+</div>
+<div style = 'margin-top: 150px' class="container">
+    <div class="row"> 
+      <div class="col">
+        <hr class="footer">
+        <h6 id="bot-link"><b><a class="four" href="/">HOME</a> - <a class="four" href="whoweare.html">WHO WE ARE</a> - <a class="four" href="whatwedo.html">WHAT WE DO</a> - <a class="four" href="#">NEWS & EVENTS</a> - <a class="four" href="#">WHERE WE WORK</a> - <a class="four" href="#">CONTACT</a></h6></b>
+        <p id=copy>All copyrights and legal info here</p>
+      </div>
+    </div>
+</div>
+
+{% endblock content %}
