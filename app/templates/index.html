@@ -1,5 +1,9 @@
 {% extends 'base.html' %}
 
+{% block css %}
+{{ super() }}
+<link rel="stylesheet" href="main.css">
+{% endblock css %}
     {% block content %}
 
 <div class="container">
@@ -17,56 +21,46 @@
       </p>
     </div>
     <div class="col-4 bg-white">
-      
-    <!-- </div>
-  </div>
-</div> -->
-<div class="container">
-<div class="row" >
-      <div class="col-md-8"style="height: 200px; overflow-y:scroll; background-color: #962b10;">
-    
-
-
-        In a 1983/Title IX claim brought againt an Illinois school district
-        and its administrators, Robert Lentz was able to obtain a Motion to Dismiss with prejudice from the Fed Dist
-        Court of Illinois. Nielsen, Zehe, & Antas, P.C. is pleased to announce that Vaughn A. Drozd has joined the firm
-        Associate as attorney.
-      </div>
-</div>
-    <div style="width: 18rem;">
-            <p>
-              <b> Nielsen, Zehe, & Antas, P.C.</b>
-  
-              <br>55 West Monroe St Street Suite 1800
-              <br>Chicago, IL 60603
-              <br>312-322-9900 phone
-              <br>312-322-9977 fax
-              <br a href="ENielsen@nzalaw.com"a>
-            </p>
-            </div>
-</div>
- </div>           
-         
-          
+      <div class="container">
+        <div class="row" >
+          <div class="col-md-8"style="height: 300px; overflow-y:scroll; background-color: #962b10;">
       
 
-    
 
-    
-
-     
-          
-            
-<!-- <div class="container">
-  <div class="row">
-            <div class="col">
-              <hr class="footer">
-              <h6 id="bot-link"><b><a class="four" href="/">HOME</a> - <a class="four" href="whoweare.html">WHO WE ARE</a> - <a
-                    class="four" href="whatwedo.html">WHAT WE DO</a> - <a class="four" href="#">NEWS & EVENTS</a> - <a
-                    class="four" href="#">WHERE WE WORK</a> - <a class="four" href="#">CONTACT</a></h6></b>
-              <p id=copy>All copyrights and legal info here</p>
-            </div>
+              In a 1983/Title IX claim brought againt an Illinois school district
+              and its administrators, Robert Lentz was able to obtain a Motion to Dismiss with prejudice from the Fed Dist
+              Court of Illinois. Nielsen, Zehe, & Antas, P.C. is pleased to announce that Vaughn A. Drozd has joined the firm
+              Associate as attorney.
           </div>
-        </div> -->
-    {% endblock content %}       
+        </div>
+      <div style="width: 18rem;">
+              <p>
+                <b> Nielsen, Zehe, & Antas, P.C.</b>
+    
+                <br>55 West Monroe St Street Suite 1800
+                <br>Chicago, IL 60603
+                <br>312-322-9900 phone
+                <br>312-322-9977 fax
+                <br a href="ENielsen@nzalaw.com"a>
+              </p>
+      </div>
+    </div>
+  </div>
         
+  <!-- <div style = 'margin-top: 100px' class="container">
+    <div class="row" >
+              <div class="col">
+                <hr class="footer">
+                <h6 id="bot-link"><b><a class="four" href="/">HOME</a> - <a class="four" href="/whoweare">WHO WE ARE</a> - <a
+                      class="four" href="/whatwedo">WHAT WE DO</a> - <a class="four" href="#">NEWS & EVENTS</a> - <a
+                      class="four" href="#">WHERE WE WORK</a> - <a class="four" href="#">CONTACT</a></h6></b>
+                <p id=copy>All copyrights and legal info here</p>
+              </div>
+    </div>
+  </div> -->
+  </div>
+ 
+  
+</div>  
+    {% endblock content %}       
+       
