@@ -8,7 +8,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    {% block css %}
     <link rel="stylesheet" href="../static/css/whoweare.css">
+    {% endblock css %}
     <style>
     
         body {
@@ -32,14 +34,6 @@
 
         
     </div>
-    <div class="container">
-        <div class="row"> 
-          <div class="col">
-            <hr class="footer">
-            <h6 id="bot-link"><b><a class="four" href="/">HOME</a> - <a class="four" href="whoweare.html">WHO WE ARE</a> - <a class="four" href="whatwedo.html">WHAT WE DO</a> - <a class="four" href="#">NEWS & EVENTS</a> - <a class="four" href="#">WHERE WE WORK</a> - <a class="four" href="#">CONTACT</a></h6></b>
-            <p id=copy>All copyrights and legal info here</p>
-          </div>
-        </div>
-    </div>
+    
   </body>
 </html>
