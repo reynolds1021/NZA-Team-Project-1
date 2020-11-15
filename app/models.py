@@ -1,16 +1,26 @@
-from app import app, db
+from app import app, db, login
 from werkzeug.security import generate_password_hash, check_password_hash
+from flask_login import UserMixin
 
-class User(db.Model):
+@login.user_loader
+def load_user(user_id):
+    return User.query.get(int(user_id))
+
+
+
+
+class User(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(100), nullable=False, unique=True)
     email = db.Column(db.String(100), nullable=False, unique=True)
     password = db.Column(db.String(256), nullable=False)
+   # createcasenote = db.Column(db.String(250), nullable=True)
 
     def __init__(self, username, email, password):
         self.username = username
         self.email = email
         self.password = self.set_password(password)
+        
         
     def set_password(self, password):
         pw_hash = generate_password_hash(password)
@@ -18,3 +28,18 @@ class User(db.Model):
 
     def __repr__(self):
         return f"<User | {self.username}"
+
+class CaseNotes(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    casenote = db.Column(db.String(1000), nullable=False, unique=True)
+   
+   
+
+    def __init__(self, casenote):
+        self.casenote = casenote
+        
+        
+
+    def __repr__(self):
+        return f"<Casenote | {self.casenote}"
+

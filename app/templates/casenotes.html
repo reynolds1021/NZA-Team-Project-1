@@ -1,0 +1,26 @@
+{% extends 'base.html'%}
+
+{% block content %}
+   
+
+ <h1>Case Notes Page</h1>
+
+ <form action="" method = "POST">
+   {{ form.hidden_tag() }}
+   <div class="form-group">
+       <fieldset>
+           {{ form.create.label }}
+           {{ form.create(class='form-control', placeholder='Create Case Note(s)') }}
+       </fieldset>
+      
+       
+       {{ form.submit(class='btn btn-success') }}
+      </fieldset>
+      </div>
+  </form>
+
+
+ 
+ 
+ 
+ {% endblock content %}

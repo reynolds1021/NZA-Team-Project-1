@@ -2,22 +2,30 @@
 
 {%  block content   %}
 
-<h1>"Hello, new user! Please create account here.</h1>
-<form action="">
+<h1>Login Page</h1>
+<form action="" method = "POST">
     {{ form.hidden_tag() }}
-    <div class="formgroup">
+    <div class="form-group">
         <fieldset>
             {{ form.username.label }}
             {{ form.username(class='form-control', placeholder='username') }}
         </fieldset>
-        <fieldset>
-            {{ form.email.label }}
-            {{ form.email(class='form-control', placeholder='Email') }}
-        </fieldset>
+       
         <fieldset>
             {{ form.password.label }}
             {{ form.password(class='form-control', placeholder='Password') }}
         </fieldset>
+
+        <fieldset>
+       
+            {{form.remember_me(class='form-check-input') }}
+            {{ form.remember_me.label }}
+        </fieldset>
+
+
+        
+    
+
         
     
         {{ form.submit(class='btn btn-success') }}
